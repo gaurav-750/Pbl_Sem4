@@ -1,0 +1,20 @@
+{
+  "name": "pbl_project",
+  "version": "1.0.0",
+  "description": "Sem 4 PBL Project - Begin Finance",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pbl",
+    "finance"
+  ],
+  "author": "Gaurav Abhijeet",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}
