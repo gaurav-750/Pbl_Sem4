@@ -69,10 +69,11 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-.search-bar-divs span{
+.search-bar-divs span a{
     color: #98BAE7;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
 }
 
 form i{

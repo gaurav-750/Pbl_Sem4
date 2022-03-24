@@ -9,6 +9,8 @@ const port = 8000;
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+app.use(express.urlencoded({extended: true}));
+
 //importing the routeIndex file:
 const goToRouteIndex = require('./routes/indexRoute.js');
 app.use('/', goToRouteIndex);
