@@ -5,21 +5,21 @@ const app = express();
 const port = 8000;
 
 
+//Database:
+const db = require('./config/mongoose');
+
 //telling our web app to use ejs as the template engine:
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.use(express.urlencoded({extended: true}));
 
-//importing the routeIndex file:
-const goToRouteIndex = require('./routes/indexRoute.js');
-app.use('/', goToRouteIndex);
-
-
 //accessing the static files: css and js:
 app.use(express.static('assets'));
 
-
+//importing the routeIndex file:
+const goToRouteIndex = require('./routes/indexRoute.js');
+app.use('/', goToRouteIndex);
 
 
 
