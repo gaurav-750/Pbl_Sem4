@@ -1,0 +1,54 @@
+
+
+    <header id="header">
+        <div id="name">
+            <span>
+                Begin Finance
+            </span>
+        </div>
+
+        <div id="search">
+            <div id="search-bar" class="search-bar-divs">
+                <form action="">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+            <div class="search-bar-divs">
+                <span>
+                    <a href="">Ask Support</a>
+                </span>
+            </div>
+
+            <!-- sign up, sign in, signout, username -->
+
+            <% if(locals.signedInUser){ %>
+
+                <div class="search-bar-divs">
+                    <span>
+                        <a href="/users/SignUp"> <%=signedInUser.name%> </a>
+                    </span>
+                </div>
+                <div class="search-bar-divs">
+                    <span>
+                        <a href="/users/SignOut">Sign Out</a>
+                    </span>
+                </div>
+
+            <% }else { %>
+
+                <div class="search-bar-divs">
+                    <span>
+                        <a href="/users/SignUp">Sign Up</a>
+                    </span>
+                </div>
+                <div class="search-bar-divs">  
+                    <span>
+                        <a href="/users/SignIn">Sign In</a>
+                    </span>
+                </div>
+
+            <% } %>
+            
+        </div>
+    </header>

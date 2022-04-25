@@ -1,5 +1,5 @@
 //importing the user model:
-const User = require("../model/user");
+const User = require("../models/user");
 
 module.exports.Sign_Up = function(req, res){
     return res.render('SignUp');
@@ -62,3 +62,9 @@ module.exports.createSession = function(req, res){
 }
 
 
+
+module.exports.destroySession = function(req, res){
+    req.logout(); 
+
+    return res.redirect('/');
+}
